@@ -23,7 +23,19 @@
 // 3. Crea una funzione che controlli se due numeri siano compresi tra 40 e 60 o tra 70 e 100. Ritorna
 // 'true' se rispecchiano queste condizioni, altrimenti ritorna false.
 
+function controlloNumeri(num1, num2) {
 
+    return (
+        ((num1 >= 40 && num1 <= 60) || (num1 >= 70 && num1 <= 100)) &&
+        ((num2 >= 40 && num2 <= 60) || (num2 >= 70 && num2 <= 100))
+    )
+
+
+
+}
+
+console.log(controlloNumeri(10, 20))
+console.log(controlloNumeri(50, 10))
 //------------------------------------------------------------------------------------------------------------------------------------
 // 4. Crea una funzione che accetti un nome di città come parametro e ritorni il nome stesso se inizia con
 // "Los" o "New", altrimenti ritorni false'.
